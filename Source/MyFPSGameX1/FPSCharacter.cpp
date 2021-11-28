@@ -36,16 +36,16 @@ AFPSCharacter::AFPSCharacter()
 		FPSMesh->CastShadow = false;
 	}
 
-	static ConstructorHelpers::FObjectFinder<UStaticMesh>TreeMesh(TEXT("StaticMesh'/Game/Content/Models/M2/Tree/Tree.Tree'"));
-	if (TreeMesh.Succeeded()) {
-		SphereVisual = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Sphere_Mesh"));
-		check(SphereVisual != nullptr);
-		SphereVisual->SetStaticMesh(TreeMesh.Object);
-		SphereVisual->SetRelativeLocation(FVector(0.0f,0,0));
-		//SphereVisual->SetWorldScale3D(FVector(0.2f, 0.04f, 0.02f));
-		SphereVisual->SetCollisionEnabled(ECollisionEnabled::NoCollision);
-		SphereVisual->SetupAttachment(GetRootComponent());
-	}
+	//static ConstructorHelpers::FObjectFinder<UStaticMesh>TreeMesh(TEXT("StaticMesh'/Game/Content/Models/M2/Tree/Tree.Tree'"));
+	//if (TreeMesh.Succeeded()) {
+	//	SphereVisual = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Sphere_Mesh"));
+	//	check(SphereVisual != nullptr);
+	//	SphereVisual->SetStaticMesh(TreeMesh.Object);
+	//	SphereVisual->SetRelativeLocation(FVector(0.0f,0,0));
+	//	//SphereVisual->SetWorldScale3D(FVector(0.2f, 0.04f, 0.02f));
+	//	SphereVisual->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+	//	SphereVisual->SetupAttachment(GetRootComponent());
+	//}
 
 	//GetMesh()->DestroyComponent();
 	//USkeletalMeshComponent* mesh = GetMesh();

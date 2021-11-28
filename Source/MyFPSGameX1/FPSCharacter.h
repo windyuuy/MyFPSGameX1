@@ -24,8 +24,6 @@ protected:
 
 	int CurBlockIndex=0;
 
-	//UPROPERTY(VisibleDefaultsOnly, Category = Mesh)
-		UStaticMeshComponent* SphereVisual;
 public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
